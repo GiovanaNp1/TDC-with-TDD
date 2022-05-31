@@ -2,7 +2,6 @@ const People = require('../Model/People')
 
 module.exports = {
     async show (request, response){
-        console.log('GET');
         try {
             const people = await People.find();
             console.log('GET', people);

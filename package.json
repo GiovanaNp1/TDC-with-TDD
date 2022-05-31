@@ -15,7 +15,7 @@
     ]
   },
   "scripts": {
-    "test": "jest --setupFiles dotenv/config --silent=false --watch --env=node",
+    "test": "jest --setupFiles dotenv/config --silent=false --watch --env=node --coverage",
     "start": "nodemon index.js"
   },
   "keywords": [],

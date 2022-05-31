@@ -17,7 +17,7 @@ exports.mockPostPeople = mockPostPeople;
 let mockPostPeopleErro = {
     "banana": "Banana" ,
     "gander": "Female",
-    "age": "10",
+    "age": "abc",
     "eye_color": "Black",
     "hair_color": "Red",
     "mundo": "China",

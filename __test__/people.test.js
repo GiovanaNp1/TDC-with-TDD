@@ -1,18 +1,16 @@
-//Antes de criar a API
-
 var express = require("express");
 var app = express();
 const request = require("supertest");
 const peopleController = require("../controller/peopleController");
 const routes = require("../routes");
 const mongoose = require('mongoose');
-const { mockPostPeople } = require("../mock/mock.people");
+const { mockPostPeople, mockPostPeopleErro } = require("../mock/mock.people");
 
 app.use(express.json());
 app.use(routes)
 
 describe("Get /people ", () => {
-    beforeEach(async() => {
+    beforeAll(async() => {
         const mongo = process.env.MONGO;
         await mongoose.connect(mongo, {
             useNewUrlParser: true,
@@ -29,7 +27,7 @@ describe("Get /people ", () => {
 });
 
 describe("POST /people ", () => {
-    beforeEach(async() => {
+    beforeAll(async() => {
         const mongo = process.env.MONGO;
         await mongoose.connect(mongo, {
             useNewUrlParser: true,
@@ -44,7 +42,12 @@ describe("POST /people ", () => {
             expect(res.body).toBeDefined();
         });
     });
+    test ("POST people - With Error", async () => {
+        return await request(app).post("/people", peopleController.create) 
+        .send(mockPostPeopleErro)
+            .then((res) => {
+                expect(res.status).toBe(500);
+                expect(res.body.msg).toBe('Deu ruim')
+            });
+    });
 });
-
-//Escrevemos um Teste que inicialmente não passa (Red)
-
