@@ -22,13 +22,12 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
-      env:
-        MONGO: mongodb+srv://TDC:bananinha@cluster0.oi418.mongodb.net/?retryWrites=true&w=majority
-        PORT:  8080
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+        envkey_MONGO: mongodb+srv://TDC:bananinha@cluster0.oi418.mongodb.net/?retryWrites=true&w=majority
+        envkey_PORT: 8080
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
