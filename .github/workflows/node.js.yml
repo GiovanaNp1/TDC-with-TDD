@@ -24,7 +24,7 @@ jobs:
     - name: Use Node.js ${{ matrix.node-version }}
       env:
         MONGO: mongodb+srv://TDC:Bananinha@cluster0.2bx0q.mongodb.net/?retryWrites=true&w=majority
-        PORT: secrets.8080
+        PORT:  8080
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
