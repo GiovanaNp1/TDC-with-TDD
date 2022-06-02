@@ -23,8 +23,8 @@ jobs:
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
       env:
-        MONGO: ${{ secrets.mongodb+srv://TDC:Bananinha@cluster0.2bx0q.mongodb.net/?retryWrites=true&w=majority }}
-        PORT: ${{ secrets.8080 }}
+        MONGO: mongodb+srv://TDC:Bananinha@cluster0.2bx0q.mongodb.net/?retryWrites=true&w=majority
+        PORT: secrets.8080
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
