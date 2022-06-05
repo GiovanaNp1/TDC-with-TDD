@@ -44,6 +44,7 @@ https://www.youtube.com/watch?v=mZh4Wd_Ijxk&t=1s
 
 https://www.youtube.com/watch?v=mZh4Wd_Ijxk&t=1s
 
+  
 ## Links importantes 💙
 
 https://iterasys.com.br/pt/cursos/semana-do-teste-de-api
