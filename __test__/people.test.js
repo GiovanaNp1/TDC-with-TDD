@@ -11,7 +11,7 @@ app.use(routes)
 
 describe("Get /people ", () => {
     beforeAll(async() => {
-        const mongo = process.env.MONGO;
+        const mongo = 'mongodb+srv://TDD:bananinha@cluster0.ttli4.mongodb.net/?retryWrites=true&w=majority'
         await mongoose.connect(mongo, {
             useNewUrlParser: true,
             useUnifiedTopology:  true
@@ -28,7 +28,7 @@ describe("Get /people ", () => {
 
 describe("POST /people ", () => {
     beforeAll(async() => {
-        const mongo = process.env.MONGO;
+        const mongo = 'mongodb+srv://TDD:bananinha@cluster0.ttli4.mongodb.net/?retryWrites=true&w=majority';
         await mongoose.connect(mongo, {
             useNewUrlParser: true,
             useUnifiedTopology:  true
