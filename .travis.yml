@@ -13,3 +13,5 @@ script:
 # Script de teste encontrado no package.json
   -	echo MONGO $MONGO
   - npm run test-ci
+
+  
