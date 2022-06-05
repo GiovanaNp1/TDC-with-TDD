@@ -6,6 +6,10 @@ before_script:
 # Pode ser usado npm ou yarn, escolhemos usar yarn.
   - npm install
 # Script "principal"
+env:
+  - PORT=$PORT
+  - MONGO=$MONGO
 script:
 # Script de teste encontrado no package.json
+  -	echo MONGO $MONGO
   - npm run test-ci
