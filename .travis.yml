@@ -8,4 +8,4 @@ before_script:
 # Script "principal"
 script:
 # Script de teste encontrado no package.json
-  - npm run test
+  - npm run test-ci
