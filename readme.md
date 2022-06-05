@@ -11,6 +11,7 @@ Versão do NPM - 8.10.0
 
 ## Passo a passo de como utilizar 💡
 
+
 1. Para podermos utilizar precisaremos criar o arquivo .env dentro do nosso projeto, nele ficará a parte de variaveis de ambiente da nossa aplicação
 2. Acesse o site https://cloud.mongodb.com/ e crie sua conta por lá
 3. Acessando sua conta crie um novo projeto e deixe o nome TDC - Testes e em add membros deixe como está no caso ele vai deixar você seu usuario de cadastro como owner
