@@ -6,10 +6,6 @@ before_script:
 # Pode ser usado npm ou yarn, escolhemos usar yarn.
   - npm install
 # Script "principal"
-env:
-  global:
-    -PORT=8080
-    -MONGO=mongodb+srv://TDD:bananinha@cluster0.ttli4.mongodb.net/?retryWrites=true&w=majority
 script:
 # Script de teste encontrado no package.json
   - npm run test

@@ -5,7 +5,7 @@ const routes = require('./routes');
 
 require('dotenv').config();
 
-const port = process.env.PORT;
+const port = process.env.PORT || 8080;
 const mongo = process.env.MONGO;
 
 
