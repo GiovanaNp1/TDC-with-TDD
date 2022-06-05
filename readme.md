@@ -21,6 +21,12 @@ Versão do NPM - 8.10.0
 9 - antes de iniciar rode o npm i ou npm install
 10 - Para ver a API com o teste funcionando podemos rodar o comando npm run test
 
+## Sobre como eu montei essa API e conceitos de Back-end 🦋
+
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDDAJ5fxuiCWJIvtYbHIq-1K0PL3j2-1bhKGdNL-9bf_jgZ2txPqDPBHL5F_2iP5N4GHY&usqp=CAU)
+
+https://www.youtube.com/watch?v=mZh4Wd_Ijxk&t=1s
+
 
 ## Tecnologias usadas nesse projeto projeto 💻
 
