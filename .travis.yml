@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - "14.15.1"
+# Script que tem que ser executado antes do antes do script "principal"
+before_script:
+# Pode ser usado npm ou yarn, escolhemos usar yarn.
+  - npm install
+# Script "principal"
+script:
+# Script de teste encontrado no package.json
+  - npm run test-ci

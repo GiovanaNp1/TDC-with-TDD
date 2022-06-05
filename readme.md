@@ -11,6 +11,7 @@ Versão do NPM - 8.10.0
 
 ## Passo a passo de como utilizar 💡
 
+
 1. Para podermos utilizar precisaremos criar o arquivo .env dentro do nosso projeto, nele ficará a parte de variaveis de ambiente da nossa aplicação
 2. Acesse o site https://cloud.mongodb.com/ e crie sua conta por lá
 3. Acessando sua conta crie um novo projeto e deixe o nome TDC - Testes e em add membros deixe como está no caso ele vai deixar você seu usuario de cadastro como owner
@@ -21,6 +22,12 @@ Versão do NPM - 8.10.0
 8. no .env coloque tambem PORT=8080
 9. antes de iniciar rode o npm i ou npm install
 10. Para ver a API com o teste funcionando podemos rodar o comando npm run test
+
+## Sobre como eu montei essa API e conceitos de Back-end 🦋
+
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDDAJ5fxuiCWJIvtYbHIq-1K0PL3j2-1bhKGdNL-9bf_jgZ2txPqDPBHL5F_2iP5N4GHY&usqp=CAU)
+
+https://www.youtube.com/watch?v=mZh4Wd_Ijxk&t=1s
 
 
 ## Tecnologias usadas nesse projeto projeto 💻

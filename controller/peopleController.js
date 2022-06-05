@@ -1,4 +1,4 @@
-const People = require('../Model/People')
+const People = require('../model/people')
 
 module.exports = {
     async show (request, response){
