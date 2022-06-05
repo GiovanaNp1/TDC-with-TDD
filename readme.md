@@ -30,6 +30,7 @@ Versão do NPM - 8.10.0
 https://www.youtube.com/watch?v=mZh4Wd_Ijxk&t=1s
 
 
+
 ## Tecnologias usadas nesse projeto projeto 💻
 
 - 🍃 [MongoDB](https://www.mongodb.com/pt-br)
