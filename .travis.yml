@@ -8,6 +8,7 @@ before_script:
 # Script "principal"
 script:
 # Script de teste encontrado no package.json
+  - echo "$MONGO"
   - npm run test-ci
 
   
