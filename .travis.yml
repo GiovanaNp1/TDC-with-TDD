@@ -4,7 +4,7 @@ node_js:
 # Script que tem que ser executado antes do antes do script "principal"
 before_script:
 # Pode ser usado npm ou yarn, escolhemos usar yarn.
-  - npm ci
+  - npm install
 # Script "principal"
 script:
 # Script de teste encontrado no package.json
