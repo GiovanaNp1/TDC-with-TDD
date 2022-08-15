@@ -29,6 +29,8 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: echo "This is the $MONGO environment variable"
+      env:
+        MONGO: ${{ secrets.MONGO }}
     - run: npm run test-ci
-    - env:
+      env:
         MONGO: ${{ secrets.MONGO }}
